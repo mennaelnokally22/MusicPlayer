@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6e16df7eac.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body class="bg-primary">
+ <div class="container" style="display: flex;justify-content: space-between;margin-top: 200px;">
+  <div class="row">
+  <div id="audios" class="bg-dark" style="border-radius: 5px;padding: 20px;position: absolute;right: 15px;min-width: 350px;padding: 28px;">
+    <a id="song-list" style="display: block;" class="badge badge-warning p-2 m-2" data-value="0" data-src="Dusk Till Dawn - ZAYN ft. Sia (Lyrics).mp3">Dusk Till Dawn - ZAYN ft. Sia (Lyrics)</a>
+    <a id="song-list" style="display: block;" class="badge badge-danger p-2 m-2" data-value="1" data-src="Ashe - Moral Of The Story.mp3">Ashe - Moral Of The Story</a>
+    <a id="song-list" style="display: block;" class="badge badge-success p-2 m-2" data-value="2" data-src="Maroon 5 - Memories.mp3">Maroon 5 - Memories</a>
+   </div>
+   <div id="songSec">
+    <div id="songName" class="badge p-2 m-2"></div>
+    <audio id="song" style="display: block;"></audio>
+    <div class="m-3">
+    <div class="m-4">
+      <label id="seekLbl1">0:00 /</label>
+     <label id="seekLbl"></label>
+    <input type="range" id="seekRange" class="custom-range" value="0" step="any">
+    </div>
+    <div class="m-4">
+      <label>Volume</label>
+      <input type="range" id="volRange"  class="custom-range">
+    </div>
+    <button id="btnPlay" type="button" class="btn btn-danger">Play <i class="fas fa-play"></i></button>
+    <button id="btnPause" type="button" class="btn btn-warning">Pause <i class="fas fa-pause"></i></button>
+    <button id="btnStop" type="button" class="btn btn-success">Stop <i class="far fa-stop-circle"></i></button>
+    <button id="btnMute" type="button" class="btn btn-secondary"><i class="fas fa-volume-up" id="fa"></i></button>
+    </div>
+   </div>
+  </div>
+  </div>
+
+    <script src="main.js"></script>
+</body>
+</html>   
